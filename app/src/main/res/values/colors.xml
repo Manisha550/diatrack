@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#6200EE</color>
+
+        <!-- Background and Text Colors -->
+        <color name="white">#FFFFFF</color>
+        <color name="black">#000000</color>
+        <color name="gray">#BDBDBD</color>
+
+        <!-- Primary Button Color -->
+        <color name="blue">#1E88E5</color>
+
+        <!-- Additional Colors (Optional) -->
+        <color name="light_gray">#F5F5F5</color>
+        <color name="error_red">#D32F2F</color>
+        <color name="success_green">#388E3C</color>
+    <color name="background">#1E1E1E</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#8A8A8A</color>
+
+
+</resources>

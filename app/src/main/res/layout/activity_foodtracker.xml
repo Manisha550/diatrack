@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <DiabetesFoodTracker>
+        <FoodEntry>
+            <MealType>Breakfast</MealType>
+            <Food>Oatmeal</Food>
+            <PortionSize>1 cup</PortionSize>
+            <Carbs>27</Carbs>
+        </FoodEntry>
+        <FoodEntry>
+            <MealType>Lunch</MealType>
+            <Food>Grilled Chicken Salad</Food>
+            <PortionSize>1 plate</PortionSize>
+            <Carbs>10</Carbs>
+        </FoodEntry>
+        <FoodEntry>
+            <MealType>Dinner</MealType>
+            <Food>Baked Salmon</Food>
+            <PortionSize>1 fillet</PortionSize>
+            <Carbs>0</Carbs>
+        </FoodEntry>
+        <FoodEntry>
+            <MealType>Snack</MealType>
+            <Food>Apple with Almond Butter</Food>
+            <PortionSize>1 apple</PortionSize>
+            <Carbs>25</Carbs>
+        </FoodEntry>
+    </DiabetesFoodTracker>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

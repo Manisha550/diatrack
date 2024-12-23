@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "953762420983",
+    "project_id": "diatrack-5fe44",
+    "storage_bucket": "diatrack-5fe44.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953762420983:android:105937e4f7bc3063c99bf2",
+        "android_client_info": {
+          "package_name": "com.example.diatrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC2bwKzrixRlNBXIygRcEFIaf0-6F3t3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

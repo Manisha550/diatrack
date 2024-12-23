@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDE7F6"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:20 PM"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_wifi" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_signal" />
+        </LinearLayout>
+
+        <!-- Greeting Section -->
+        <TextView
+            android:id="@+id/greetingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HEY, SUMAIYA\nHAVE A REFRESHING EVENING!"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <Button
+                android:id="@+id/chatWithDia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4CAF50"
+                android:text="Chat With Dia!" />
+
+            <Button
+                android:id="@+id/aiAssistant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FF4081"
+                android:text="AI Assistant" />
+        </LinearLayout>
+
+        <!-- Graph and Chart Section -->
+        <TextView
+            android:id="@+id/caloriesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today's Calories"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:paddingTop="16dp" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glucose Levels"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:paddingTop="16dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/glucoseChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight Tracking"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:paddingTop="16dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/weightChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+    </LinearLayout>
+</ScrollView>

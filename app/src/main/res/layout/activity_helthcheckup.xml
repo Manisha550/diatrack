@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image">
+
+    <!-- App Logo and Title -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/app_logo"
+        android:contentDescription="App Logo" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Medi-DiaBioTrack"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Check your blood Sugar Everyday"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/btnHealthStatus"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtitle"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/light_purple"
+        android:text="Check My Current Health Status"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnBloodSugar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnHealthStatus"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/light_purple"
+        android:text="Current Blood Sugar Level"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnConsultDoctor"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBloodSugar"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/light_purple"
+        android:text="Consult Doctor"
+        android:textColor="@color/white" />
+
+    <!-- Get Started Button -->
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnConsultDoctor"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/green"
+        android:text="Get Started"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

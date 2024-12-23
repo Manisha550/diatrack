@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">DiaBioTrack</string>
+    <string name="welcome_message">Welcome to Medi DiaBioTrack</string>
+    <string name="doctors_checkup">Doctors Checkup</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="emergency_hospital">Emergency Hospital</string>
+    <string name="hotline">Hotline</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

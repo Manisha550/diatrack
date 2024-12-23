@@ -1,0 +1,121 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Welcome Section -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Medi DiaBioTrack"
+            android:textSize="24sp"
+            android:textColor="#6200EE"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Doctors Checkup Section -->
+
+        <ImageView
+            android:id="@+id/doctorsImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Doctor Checkup"
+            android:src="@drawable/ic_doctor_checkup" />
+
+        <Button
+            android:id="@+id/doctorsCheckupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctors Checkup"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Login & Sign Up -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="space_between">
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Login"
+                android:backgroundTint="#6200EE"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sign Up"
+                android:backgroundTint="#6200EE"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Emergency Hospital -->
+        <Button
+            android:id="@+id/emergencyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency Hospital"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <!-- Hotline -->
+        <Button
+            android:id="@+id/hotlineButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hotline"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+        <!-- Nearby Hospital List -->
+        <TextView
+            android:id="@+id/nearbyHospitalsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nearby Hospitals:"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hospitalsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scrollbars="vertical" />
+
+        <!-- Google Map -->
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp" />
+        <ListView
+            android:id="@+id/hospitalsListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

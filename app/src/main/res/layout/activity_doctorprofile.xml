@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorProfileActivity">
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/doctorProfileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/doctor1"
+        app:layout_constraintBottom_toTopOf="@+id/doctorName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"/>
+
+    <!-- Doctor's Name -->
+    <TextView
+        android:id="@+id/doctorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dr. Indrojit Proshant"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/doctorSpecialization"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorProfileImage"/>
+
+    <!-- Doctor's Specialization -->
+    <TextView
+        android:id="@+id/doctorSpecialization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cardiologist"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/doctorExperience"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorName"/>
+
+    <!-- Doctor's Experience -->
+    <TextView
+        android:id="@+id/doctorExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10+ Years of Experience"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/doctorContact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorSpecialization"/>
+
+    <!-- Doctor's Contact Information -->
+    <TextView
+        android:id="@+id/doctorContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: +123 456 7890\nEmail: dr.prashand.com"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorExperience"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
